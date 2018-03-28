@@ -45,6 +45,7 @@
            })
            getMessages()
         })
+        socket.on('message', addMassages)
         function addMassages(message){
             $('#massages').append(`<h4>${message.name}</h4> <p>${message.message}</p>`)
         }
